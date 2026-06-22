@@ -1,18 +1,17 @@
-# React + Vite
+#  Shopping Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React e-commerce UI that fetches a product catalogue from a public API, lets users browse items, manage a cart with quantity controls, and view a mock user profile.
 
-Currently, two official plugins are available:
+##  Features
+- **Product grid** — fetches and displays all products from Fake Store API.
+- **Cart** — add, remove, and adjust item quantities; shows a running total; accessible via a popover.
+- **User profile** — loads a random mock user (name, email, address) from JSONPlaceholder via a popover.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Tech Stack
+- **Framework:** React 19 (with the React Compiler enabled)
+- **Build Tool:** Vite 7 for bundling and dev server
+- **State Management:** Zustand 5 + Immer for cart state management
+- **Data Fetching:** TanStack Query 5 for data fetching and caching
+- **UI Components:** `shadcn/ui` (Radix UI + Tailwind CSS)
+- **Styling:** Tailwind CSS 4
+- **Icons:** Lucide React
